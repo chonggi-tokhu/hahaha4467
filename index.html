@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="naver-site-verification" content="f8da2c2a01526544dbda119bc5c4fab038cf081f" />
+    <meta property="og:image" content="./jjj.svg">
+    <meta property="og:description" content="포트폴리오 chonggitokhu">
+    <meta name="google-site-verification" content="VmAocD671dCxo5Sr31hENSZuwIXnYS1AvO_QQXTPcdg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="naver-site-verification" content="867b17ceb6d5ad0f0b8034373534a4b52e8b76e9" />
+    <title>community,chonggitokhu</title>
+    <link rel="stylesheet" href="https://tistory1.daumcdn.net/tistory/5499297/skin/style.css">
+    <link rel="stylesheet" href="https://tistory1.daumcdn.net/tistory/5925927/skin/style.css">
+    <style>
+        @keyframes heartanie1 {
+            from{background: radial-gradient(#eee,var(--purple),#eee,var(--purple),#eee);}
+            to{background: radial-gradient(var(--purple),#eee,var(--purple),#eee,var(--purple));}
+        }
+        .nostyledul li {
+            list-style: none;
+            margin-left: 20px;
+        }
+        .horizonalul-type1 ul {
+            float: left;
+        }
+        .heart-btn-ico {
+            background-image: url(https://chonggi-tokhu.github.io/heartico.svg);
+        }
+        .heart-btn-ico:focus {
+            animation: heartanie1 0.6s 6;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div>
+        <div>
+            <header>
+                <h1>hello made by taejayon</h1>
+                <h3>taejayŏn<span onclick="this.style.background='var(--green)';">ŭnwidaeh</span>ada</h3>
+            </header>
+            <div>
+                <ul class="nostyledul">
+                    <li><a href="./postlists.asp">post lists</a></li>
+                    <li><a href="./Default.asp">write posting</a></li>
+                    <li><a href="./index.asp">home</a></li>
+                    <li><a href="./merong.html">merong</a></li>
+                    <li><a href="./postingdelete.asp">delete your posting</a></li>
+                    <li><a href="./server1.asp">home1</a></li>
+                    <li><a href="./server2.asp">home2</a></li>
+                </ul>
+                <p class="nukebomb" onclick="alert('bang');for(n=0;n<180;n++){alert((180-n)+'hello')}alert('0hello')" role="button"></p>
+                <i id="kakao-add-channel-button"></i>
+            </div>
+            <div>
+                <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.1.0/kakao.min.js"
+                    integrity="sha384-dpu02ieKC6NUeKFoGMOKz6102CLEWi9+5RQjWSV0ikYSFFd8M3Wp2reIcquJOemx"
+                    crossorigin="anonymous"></script>
+                <script>
+                    Kakao.init('94af88310aff8e1a5de485181c70a206'); // 사용하려는 앱의 JavaScript 키 입력
+                </script>
+                
+                <a id="add-channel-button" href="javascript:addChannel()">
+                    <img src="https://developers.kakao.com/tool/resource/static/img/button/channel/add/channel_add_small.png"
+                        alt="카카오톡 채널 추가하기 버튼" />
+                </a>
+                
+                <script>
+                    function addChannel() {
+                        Kakao.Channel.addChannel({
+                            channelPublicId: '_uUjmxj',
+                        });
+                    }
+                </script>
+                
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
